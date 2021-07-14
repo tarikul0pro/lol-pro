@@ -30,11 +30,12 @@
  
   .header-area{
     background: #ecf0f1;
-    padding: 20px 0;
+    padding: 20px 10px 10px 20px;
   }
   .container{
     width: 90%;
     margin: 0 auto;
+    
   }
   .header-content{
     display: flex;
@@ -87,12 +88,36 @@
   background-color: #E02C6D;
   padding: 10px 5px;
   color: white;
+  border-radius: 10px 5px;
  }
 .search{
   padding-right: 95px;
-  margin-top: 5px;
+  margin-bottom: 20px;
+  transition: .6s;
+  display: flex;
 
 }
+.copa{
+  display: flex;
+  margin-top: 20px;
+}
+.fixture{
+  border: 0px solid grey;
+background-color: white;
+padding: 15px 26px 24px 35px;
+
+box-shadow: 1px solid #ECF0F1;
+margin-top: 25px;
+
+}
+
+.search a:hover{
+  color: white;
+  background-color: tomato;
+  justify-content: space-between;
+
+}
+
 .middle{
   display: flex;
   margin-top: 15px;
@@ -115,40 +140,165 @@
 
 }
 .middle-2 a{ 
-  border:1px solid red;
+  border:1px;
   padding: 10px 5px;
   background: #E02C6D;
   color: white;
+  border-radius: 10px 5px;
+  transition: .6s;
+}
+.middle-2 a:hover{
+  color: tomato;
+  background-color: white;
 }
 .middle-3{
   width:500px;
 }
-/* header end css */
+/* ------------------
+      header end css
+ --------------------*/
+
+              /* -----------------------
+                       middle css start
+               -------------------------*/
 .grid-sec2{
   grid-template-columns: repeat(3, 1fr);
   display: grid;
-  column-gap: 5px;
-
-  
-}
-.grid-sec2{
-  margin-top: 65px;
+  column-gap: 35px;
+  margin-top: 50px;
   border-width: 1em;
+
 }
 .players{
-border: 1px solid white;
-background-color: white;
-padding: 50px 30px 50px 80px;
-width: 150px;
+ border: 0px solid grey;
+ background-color: white;
+ padding: 15px 26px 24px 35px;
+ width: 250px;
+ box-shadow: 1px solid #ECF0F1;
+ margin-top: 25px;
+
+}
+.players img{
+  text-align: center;
+  align-items: center;
+
+
 }
 .main{
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #ECF0F1;
+  
+}
+.sec-two{
+display: flex;
+}
+.thired-sec{
+ background-color: #ECF0F1;
  
 }
+.text p{
+  margin-bottom: 35px;
 
- 
+
+}
+.text{
+  margin-top:100px;
+  padding: 1px 163px 61px 251px;
+}
+.img-sec img{
+  margin-top:100px;
+
+  width: 500px;
+  padding: 3px 150px 48px 51px;
+}
+
+                   /* -----------------------
+                           middle css end
+               -------------------------*/
+
+
+
+          /* --------------
+            start fotter css
+          ----------------- */
+
+
+.footer-last{
+ align-items: center;
+
+}
+.image-logo li img{
+  width:50px;
+  
+  padding: 41px 128px 88px 155px
+}
+.image-logo li{
+  
+  align-items: center;
+  justify-content: center;
+}
+.image-logo{
+ display: flex;
+}
+
+.footer{
+margin-top: 85px;
+
+}
+.footer-last img{
+  width: 350px;
+  margin-bottom: 35px;
+}
+.copiright-text{
+ text-align: center;
+ margin-bottom: 15px;
+
+}
+.footer-last{
+  padding: 1px 238px 0px 496px;
+}
+            /* --------------
+               start fotter css
+             ----------------- */
+
+
+
+
+          @media (max-width:769px) {
+          .grid-sec2{
+           background-color: grey;
+          grid-template-columns: repeat(2, 1fr);
+          padding:10px 0;
+          column-gap: 10px;
+
+          }
+           .header-area{
+           background: #ecf0f1;
+          padding: 20px 10px 10px 20px;
+          }
+          .sec-two{
+           display: flex;
+           }
+          .footer{
+            display: flex;
+          }
+          }
+          @media (max-width:480px){
+           .grid-sec2{
+           background-color: grey;
+           grid-template-columns: repeat(1, 1fr);
+           column-gap: 10px;
+          }
+          .header-area{
+           background: #ecf0f1;
+           padding: 20px 10px 10px 20px;
+          }
+        
+          
+        
+}
 
 
 
